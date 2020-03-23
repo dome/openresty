@@ -31,8 +31,8 @@ RUN apk add --no-cache --virtual .build-deps \
         musl \
         outils-md5 \
         perl \
-        unzip \
-    && cd /tmp git libpng-dev libqrencode-dev lua-dev \
+        unzip git libpng-dev libqrencode-dev lua-dev \
+    && cd /tmp  \
     && curl -fSL https://luarocks.github.io/luarocks/releases/luarocks-${RESTY_LUAROCKS_VERSION}.tar.gz -o luarocks-${RESTY_LUAROCKS_VERSION}.tar.gz \
     && tar xzf luarocks-${RESTY_LUAROCKS_VERSION}.tar.gz \
     && cd luarocks-${RESTY_LUAROCKS_VERSION} \
